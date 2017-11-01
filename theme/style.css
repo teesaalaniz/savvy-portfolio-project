@@ -1,0 +1,19 @@
+body {
+  background-color: gray;
+  color: hotpink;
+  text-align: center;
+}
+ul {
+  background-color: black;
+}
+.extragreen {
+  color: green;
+}
+.left {
+  text-align: left;
+}
+#subheader {
+  font-style: italic;
+  color: teal;
+  font-weight: 500;
+}
