@@ -1,19 +1,97 @@
 body {
   background-color: gray;
-  color: hotpink;
   text-align: center;
+  margin: 0;
 }
 ul {
+  color: darkgreen;
+}
+a {
+  color: darkgreen;
+}
+.image {
+  border: 5px solid black;
+  padding: 50px;
+  margin: 50px;
+  background-color: white;
+}
+.nav-bar {
+  background-color: darkgray;
+  padding: 10px;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  }
+.header {
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 75px;
+}
+.footer {
+ background-color: silver;
+ padding: 10px;
+ margin: 10px;
+}
+.content {
+  background-color: dimgray;
+  padding: 10px;
+}
+.container {
+  width: 90%;
+  max-width: 750px;
+  margin: 10px auto;
+}
+.nothing {
+  font-style: italic;
+}
+div.container {
+  color: darkslategray;
+}
+div>p{
+  background-color: gainsboro;
+}
+.header h1 {
+  color: steelblue;
+}
+.header h1 + h3 {
+  color: tomato;
+}
+.nav-bar ~ div {
+  font-family: monospace;
+}
+#funkylist {
+  background-color: lightcoral;
+}
+#funkylist li:first-child {
   background-color: black;
 }
-.extragreen {
-  color: green;
+#funkylist li:nth-child(2n) {
+  background-color: cyan;
 }
-.left {
-  text-align: left;
+#funkylist li:nth-child(2n+1) {
+  background-color: springgreen;
 }
-#subheader {
-  font-style: italic;
-  color: teal;
-  font-weight: 500;
+#funkylist li:hover {
+  background-color: yellow;
+}
+.nav-bar li:hover {
+  background-color: black;
+}
+.nav-bar > .container > ul > li {
+  display: inline;
+  margin: 25px;
+  position: relative;
+}
+.nav-bar .dropdown {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 0;
+  padding: 5px;
+}
+.nav-bar a:hover + .dropdown,
+.nav-bar .dropdown:hover {
+  display: block;
 }
