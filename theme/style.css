@@ -104,3 +104,8 @@ div>p{
 form {
   background-color: white;
 }
+#output {
+  color: springgreen;
+  font-family: fantasy;
+  font-size: 100px;
+}
