@@ -10,13 +10,13 @@ $( "#input" ).on(
     }
 );
 
-$( "ul" ).on( "mouseenter", "li", ( event ) => {
-    $( event.target ).css( "background-color", "yellow" );
-} );
-
-$( "ul" ).on( "mouseleave", "li", ( event ) => {
-    $( event.target ).css( "background-color", "transparent" );
-} );
+// $( "ul" ).on( "mouseover", "li", ( event ) => {
+//     $( event.target ).css( "background-color", "yellow" );
+// } );
+//
+// $( "ul" ).on( "mouseout", "li", ( event ) => {
+//     $( event.target ).css( "background-color", "transparent" );
+// } );
 
 
 $( "h1" ).on( "click",( event ) => event.target.textContent = "Why did you click that?" );

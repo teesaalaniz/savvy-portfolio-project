@@ -1,4 +1,5 @@
 /* eslint-disable vars-on-top, complexity, no-use-before-define */
+/* globals $*/
 
 var story = {
     "start": {
@@ -29,22 +30,10 @@ var story = {
 };
 
 
-function validateChoice( choice, choices ){
-    var isValidChoice = false;
-
-    for( let i = 0; i < choices.length; i++ ){
-        if( choice === choices[i] ){
-            isValidChoice = true;
-        }
-    }
-
-    return isValidChoice;
-}
-
 function handleChoices( chapter, branch ){
     var choice = prompt( chapter.text );
 
-    if( validateChoice( choice, chapter.choices ) ){
+    if( chapter.choices.some( ( validChoice ) => choice === validChoice ) ){
         runStory( choice );
     }
     else{
@@ -65,3 +54,6 @@ function runStory( branch ){
     }
 }
 runStory( "start" );
+
+
+// if the answer is wrong, do not rerun the story, stay on the same page do not rerun the story use return to for UI choice
