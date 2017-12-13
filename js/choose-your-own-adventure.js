@@ -30,9 +30,7 @@ var story = {
 };
 
 
-function handleChoices( chapter, branch ){
-    var choice = prompt( chapter.text );
-
+function handleChoices( chapter, branch, choice ){
     if( chapter.choices.some( ( validChoice ) => choice === validChoice ) ){
         runStory( choice );
     }
@@ -40,20 +38,20 @@ function handleChoices( chapter, branch ){
         runStory( branch );
     }
 }
-
 function runStory( branch ){
     var chapter = story[branch];
 
-    if( chapter.choices ){
-        handleChoices( chapter, branch );
-    }
-    else{
-        document
-            .querySelector( "#output" )
-            .textContent = chapter.text;
-    }
+    $( ".inputDiv" )
+        .off( "submit" )
+        .on(
+            "submit",
+            ( event ) => {
+                var choice = $( "#input" ).val();
+
+                event.preventDefault();
+                handleChoices( chapter, branch, choice );
+            } );
+
+    $( "#output" ).text( chapter.text );
 }
 runStory( "start" );
-
-
-// if the answer is wrong, do not rerun the story, stay on the same page do not rerun the story use return to for UI choice
