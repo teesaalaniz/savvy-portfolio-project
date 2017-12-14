@@ -46,6 +46,10 @@ a {
 .blogContainer>p {
   background-color: gainsboro;
 }
+.blogContainer {
+  border: 2px solid black;
+  margin: 50px;
+}
 .header h1 {
   color: steelblue;
 }
