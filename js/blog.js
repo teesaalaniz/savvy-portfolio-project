@@ -1,6 +1,6 @@
 /* globals $ */
 
-var postsRequest = $.ajax( "http://jsonplaceholder.typicode.com/posts" );
+var postsRequest = $.ajax( "//jsonplaceholder.typicode.com/posts" );
 var $content = $( ".content" );
 
 postsRequest
