@@ -1,13 +1,12 @@
-
 body {
   background-color: gray;
   text-align: center;
   margin: 0;
   color: black;
 }
-ul {
+/* ul {
   color: silver;
-}
+} */
 a {
   color: darkgreen;
 }
@@ -15,7 +14,7 @@ a {
   border: 5px solid black;
   padding: 50px;
   margin: 50px;
-  background-color: white;
+  background-color: gainsboro;
 }
 .nav-bar {
   background-color: darkgray;
@@ -32,13 +31,9 @@ a {
   margin-top: 75px;
 }
 .footer {
- background-color: silver;
+ background-color: lightgray;
  padding: 10px;
  margin: 10px;
-}
-.content {
-  background-color: dimgray;
-  padding: 10px;
 }
 .container {
   width: 90%;
@@ -48,10 +43,7 @@ a {
 .nothing {
   font-style: italic;
 }
-div.container {
-  color: darkslategray;
-}
-div>p{
+.blogContainer>p {
   background-color: gainsboro;
 }
 .header h1 {
@@ -63,24 +55,6 @@ div>p{
 .nav-bar ~ div {
   font-family: monospace;
 }
-/*#funkylist {
-  background-color: lightcoral;
-}
-#funkylist li:first-child {
-  background-color: black;
-}
-#funkylist li:nth-child(2n) {
-  background-color: cyan;
-}
-#funkylist li:nth-child(2n+1) {
-  background-color: springgreen;
-}
-#funkylist li:hover {
-  background-color: yellow;
-}*/
-/*.nav-bar li:hover {
-  background-color: white;
-}*/
 .nav-bar > .container > ul > li {
   display: inline;
   margin: 25px;
@@ -101,7 +75,6 @@ div>p{
 .footer li {
   display: inline;
 }
-
 form {
   background-color: white;
 }
@@ -109,7 +82,30 @@ form {
   color: springgreen;
   font-family: fantasy;
   font-size: 50px;
+  margin-top: 75px;
 }
-.newOption {
+.projectsContainer {
+  margin: 10px;
+  background-color: ivory;
+}
+/* .newOption {
   visibility: hidden;
+} */
+/*#funkylist {
+  background-color: lightcoral;
 }
+#funkylist li:first-child {
+  background-color: black;
+}
+#funkylist li:nth-child(2n) {
+  background-color: cyan;
+}
+#funkylist li:nth-child(2n+1) {
+  background-color: springgreen;
+}
+#funkylist li:hover {
+  background-color: yellow;
+}*/
+/*.nav-bar li:hover {
+  background-color: white;
+}*/
